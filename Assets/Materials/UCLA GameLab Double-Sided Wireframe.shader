@@ -1,3 +1,5 @@
+//Got from http://games.ucla.edu/game/unity-wireframe-shader
+
 Shader "UCLA Game Lab/Wireframe/Double-Sided" 
 {
 	Properties 
