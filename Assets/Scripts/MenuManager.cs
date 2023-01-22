@@ -7,25 +7,8 @@ public class MenuManager : MonoBehaviour
     [Range(1, 3)]
     public int csc = 1;
     [SerializeField]
-    private GameObject CameraLines, ShapeLines, ColourLines, CamMenu, ShaMenu, ColMenu, Panel, CameraUI, SpinUI, ShapeUI, BackgroundUI;
-    public bool cameraActive = true, shapeActive = true;
-
-
-    public void Toggle()
-    {
-        if (cameraActive)
-        {
-            CameraUI.SetActive(false);
-            SpinUI.SetActive(true);
-            cameraActive = false;
-        }
-        else if (!cameraActive)
-        {
-            SpinUI.SetActive(false);
-            CameraUI.SetActive(true);
-            cameraActive = true;
-        }
-    }
+    private GameObject CameraLines, ShapeLines, ColourLines, CamMenu, ShaMenu, ColMenu, Panel, ShapeUI, BackgroundUI;
+    public bool shapeActive = true;
 
     public void ShapeBackground()
     {

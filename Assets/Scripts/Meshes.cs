@@ -80,6 +80,14 @@ public class Meshes : MonoBehaviour
         return pointsA;
     }
 
+    // public Vector3[] SphereVi()
+    // {
+    //     return new Vector3[]
+    //     {
+
+    //     };
+    // }
+
     public int[] SphereT()
     {
         return new int[]
