@@ -9,6 +9,7 @@ public class ColourManager : MonoBehaviour
     public int WSV;
 
     public Material mat;
+    public bool wire = false;
 
     [SerializeField]
     private Slider sliderR, sliderG, sliderB, sliderA;
@@ -32,7 +33,11 @@ public class ColourManager : MonoBehaviour
         //color = new Color(sliderR.value, sliderG.value, sliderB.value, sliderA.value);
         color = new Color(sliderR.value, sliderG.value, sliderB.value, 1f);
 
-        mat.SetColor("_Color", color);
+        if(!wire)
+            mat.SetColor("_Color", color);
+        else if(wire) {
+            mat.SetColor("_WireColor", color);
+        }
     }
 
     void RGB()
