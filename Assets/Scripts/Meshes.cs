@@ -60,17 +60,17 @@ public class Meshes : MonoBehaviour
     public Vector3[] SphereV(int samples)
     {
         List<Vector3> points = new List<Vector3>();
-        float phi = Mathf.PI * (3f - Mathf.Sqrt(5f));
+        float phi = Mathf.PI * (3f - Mathf.Sqrt(5f)); // the golden angle in radians
 
         for (int i = 0; i < samples; i++)
         {
-            float y = 1 - (i / (float)(samples - 1)) * 2;
-            float radius = Mathf.Sqrt(1 - y * y);
+            float y = 1 - (i / (float)(samples - 1)) * 2; // sets y coordinate, goes from 1 to -1
+            float radius = Mathf.Sqrt(1 - y * y); // radius at y
 
-            float theta = phi * i;
+            float theta = phi * i; // golden angle increment
 
-            float x = Mathf.Cos(theta) * radius;
-            float z = Mathf.Sin(theta) * radius;
+            float x = Mathf.Cos(theta) * radius; // sets x coordinate
+            float z = Mathf.Sin(theta) * radius; // sets z coordinate
 
             points.Add(new Vector3(x, y, z));
         }
