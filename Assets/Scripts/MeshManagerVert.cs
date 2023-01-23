@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class MeshManagerVert : MonoBehaviour
 {
-
-
     public Slider resSlider;
     public int samples = 1000;
 
@@ -25,51 +23,16 @@ public class MeshManagerVert : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        active = verticesT.isOn;
-
-        Create();
-
-        // if (verticesT.isOn)
-        // {
-        //     if (!active)
-        //     {
-        //         Create();
-        //         active = verticesT.isOn;
-        //     }
-
-        // }
-        // else if (!verticesT.isOn)
-        // {
-        //     RemoveVertices();
-        //     active = verticesT.isOn;
-        // }
-
         if (verticesT.isOn)
             Create();
         else
             RemoveVertices();
-
 
         ResChanged();
     }
 
     public void Changed()
     {
-        // if (verticesT.isOn)
-        // {
-        //     if (!active)
-        //     {
-        //         Create();
-        //         active = verticesT.isOn;
-        //     }
-
-        // }
-        // else if (!verticesT.isOn)
-        // {
-        //     RemoveVertices();
-        //     active = verticesT.isOn;
-        // }
-
         if (verticesT.isOn)
             Create();
         else
@@ -152,11 +115,5 @@ public class MeshManagerVert : MonoBehaviour
             CreateDodecahedron();
         else
             RemoveVertices();
-    }
-
-
-    Vector3 v(float x, float y, float z)
-    {
-        return new Vector3(x, y, z);
     }
 }
