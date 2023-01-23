@@ -5,12 +5,11 @@ using UnityEngine.UI;
 
 public class CamMenu : MonoBehaviour
 {
-
-    [Range(-8,8)]
+    [Range(-8, 8)]
     public float camX;
-    [Range(-15,15)]
+    [Range(-15, 15)]
     public float camY;
-    [Range(-2,-25)]
+    [Range(-2, -25)]
     public float camZ;
 
     public GameObject cam;
@@ -26,13 +25,12 @@ public class CamMenu : MonoBehaviour
         sZ.value = cam.transform.position.z;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Changed()
     {
         camX = sX.value * -1;
         camY = sY.value * -1;
         camZ = sZ.value;
 
-        cam.transform.position = new Vector3(camX,camY,camZ);
+        cam.transform.position = new Vector3(camX, camY, camZ);
     }
 }
