@@ -59,7 +59,6 @@ public class Meshes : MonoBehaviour
     //------------------------------------------Sphere---------------------------------------------------
     public Vector3[] SphereV(int samples)
     {
-
         List<Vector3> points = new List<Vector3>();
         float phi = Mathf.PI * (3f - Mathf.Sqrt(5f));
 
@@ -79,14 +78,6 @@ public class Meshes : MonoBehaviour
         Vector3[] pointsA = points.ToArray();
         return pointsA;
     }
-
-    // public Vector3[] SphereVi()
-    // {
-    //     return new Vector3[]
-    //     {
-
-    //     };
-    // }
 
     public int[] SphereT()
     {
