@@ -100,9 +100,4 @@ public class MeshManagerWire : MonoBehaviour
 
         mesh.RecalculateNormals();
     }
-
-    Vector3 v(float x, float y, float z)
-    {
-        return new Vector3(x, y, z);
-    }
 }
