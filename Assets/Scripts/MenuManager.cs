@@ -33,15 +33,11 @@ public class MenuManager : MonoBehaviour
         CameraLines.SetActive(false);
         ShapeLines.SetActive(false);
         ColourLines.SetActive(false);
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
         ChooseMenu();
     }
 
-    void ChooseMenu()
+    public void ChooseMenu()
     {
         if (csc == 1)
         {

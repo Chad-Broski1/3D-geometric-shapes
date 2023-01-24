@@ -13,7 +13,7 @@ public class SpinShape : MonoBehaviour
         transform.rotation = Quaternion.Euler(X, Y, Z);
     }
 
-    void setPos()
+    public void setPos()
     {
         X = manager.Xp;
         Y = manager.Yp;

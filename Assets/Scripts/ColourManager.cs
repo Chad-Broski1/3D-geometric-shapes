@@ -21,13 +21,7 @@ public class ColourManager : MonoBehaviour
         ChangeColours();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        ChangeColours();
-    }
-
-    void ChangeColours()
+    public void ChangeColours()
     {
         Color color;
         //color = new Color(sliderR.value, sliderG.value, sliderB.value, sliderA.value);

@@ -14,15 +14,10 @@ public class SizeManager : MonoBehaviour
     void Start()
     {
         sizeSlider.value = gameObject.transform.localScale.x;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         UpdateSize();
     }
 
-    void UpdateSize()
+    public void UpdateSize()
     {
         offset = sizeSlider.value/180;
 

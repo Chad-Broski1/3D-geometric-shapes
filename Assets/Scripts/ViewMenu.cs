@@ -15,12 +15,6 @@ public class ViewMenu : MonoBehaviour
         Changed();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void Right()
     {
         cso++;
