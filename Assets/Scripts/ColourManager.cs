@@ -12,7 +12,7 @@ public class ColourManager : MonoBehaviour
     public bool wire = false;
 
     [SerializeField]
-    private Slider sliderR, sliderG, sliderB, sliderA;
+    private Slider sliderR, sliderG, sliderB;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,6 @@ public class ColourManager : MonoBehaviour
     public void ChangeColours()
     {
         Color color;
-        //color = new Color(sliderR.value, sliderG.value, sliderB.value, sliderA.value);
         color = new Color(sliderR.value, sliderG.value, sliderB.value, 1f);
 
         if(!wire)
