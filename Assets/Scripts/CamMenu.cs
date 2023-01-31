@@ -20,9 +20,7 @@ public class CamMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sX.value = cam.transform.position.x * -1;
-        sY.value = cam.transform.position.y * -1;
-        sZ.value = cam.transform.position.z;
+        ResetSliders();
     }
 
     public void Changed()
@@ -32,5 +30,12 @@ public class CamMenu : MonoBehaviour
         camZ = sZ.value;
 
         cam.transform.position = new Vector3(camX, camY, camZ);
+    }
+    
+    public void ResetSliders()
+    {
+        sX.value = cam.transform.position.x * -1;
+        sY.value = cam.transform.position.y * -1;
+        sZ.value = cam.transform.position.z;
     }
 }
